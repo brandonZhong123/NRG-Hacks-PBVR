@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Grades</title>
+  <link rel="stylesheet" href="style-grades.css">
+</head>
+<body>
+<div class="container">
+  <h2 id="studentName">Student Grades</h2>
+
+  <div class="grades-table">
+    <table id="gradesTable">
+      <thead>
+      <tr>
+        <th>Assignment</th>
+        <th>Due Date</th>
+        <th>Grade</th>
+        <th>Weight</th>
+        <th>Feedback</th>
+        <th>Actions</th>
+      </tr>
+      </thead>
+      <tbody id="gradesBody">
+      <!-- Student's assignments will be loaded here -->
+      </tbody>
+    </table>
+  </div>
+
+  <h3>Add New Assignment</h3>
+  <form id="addAssignmentForm">
+    <div class="form-group">
+      <input type="text" id="assignment" placeholder="Assignment" required>
+    </div>
+    <div class="form-group">
+      <input type="date" id="dueDate" required>
+    </div>
+    <div class="form-group">
+      <input type="text" id="grade" placeholder="Grade (e.g., 85%)">
+    </div>
+    <div class="form-group">
+      <input type="text" id="weight" placeholder="Weight (e.g., 20%)">
+    </div>
+    <div class="form-group">
+      <input type="text" id="feedback" placeholder="Feedback">
+    </div>
+    <button type="button" onclick="addAssignment()">Add Assignment</button>
+  </form>
+
+  <div class="button-group">
+    <button class="secondary-btn" onclick="goBack()">Back to Teacher Dashboard</button>
+  </div>
+</div>
+
+<script src="student-grades.js"></script>
+</body>
+</html>

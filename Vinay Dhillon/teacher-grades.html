@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Grade Management</title>
+  <link rel="stylesheet" href="style-grades.css">
+</head>
+<body>
+<div class="container">
+  <h2>Teacher's Grade Management</h2>
+
+  <div class="grades-table">
+    <table>
+      <thead>
+      <tr>
+        <th>Student Name</th>
+        <th>Overall Grade</th>
+        <th>View Details</th>
+      </tr>
+      </thead>
+      <tbody id="studentList">
+      <tr>
+        <td><a href="student-grades.html?student=JohnDoe">John Doe</a></td>
+        <td id="overall-JohnDoe">null</td>
+        <td><button onclick="viewStudent('JohnDoe')">View</button></td>
+      </tr>
+      <tr>
+        <td><a href="student-grades.html?student=JaneSmith">Jane Smith</a></td>
+        <td id="overall-JaneSmith">null</td>
+        <td><button onclick="viewStudent('JaneSmith')">View</button></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+  function viewStudent(studentName) {
+      window.location.href = `student-grades.html?student=${studentName}`;
+  }
+
+  // Load overall grades from storage
+  document.addEventListener("DOMContentLoaded", function () {
+      const students = ["JohnDoe", "JaneSmith"];
+      students.forEach(student => {
+          const storedGrade = localStorage.getItem(`overall-${student}`);
+          document.getElementById(`overall-${student}`).textContent = storedGrade ? `${storedGrade}%` : "null";
+      });
+  });
+</script>
+</body>
+</html>
