@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("priority").value = "";
 });
 
+
 document.getElementById("assignmentForm").addEventListener("submit", function(event) {
     event.preventDefault();
 

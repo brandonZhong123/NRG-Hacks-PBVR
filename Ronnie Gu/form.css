@@ -13,8 +13,9 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/*heading shift*/
 h2, h3 {
-    margin-left: 5px; /* Shift headings to the right */
+    margin-left: 5px;
 }
 
 input, select, button {
@@ -27,14 +28,14 @@ input, select, button {
 }
 
 button {
-    background-color: #007bff;
+    background-color: #FF7A00;
     color: white;
-    border: none;
+    border: 1px solid #E66A00;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #E66A00;
 }
 
 .assignments {
