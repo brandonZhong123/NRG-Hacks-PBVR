@@ -3,71 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        .sidebar {
-            height: 100%;
-            width: 0;
-            position: absolute;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #111;
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 60px;
-        }
-        .sidebar a {
-            padding: 8px 8px 8px 32px;
-            text-decoration: none;
-            font-size: 25px;
-            color: #818181;
-            display: block;
-            transition: 0.3s;
-        }
-        .sidebar a:hover {
-            color: #f1f1f1;
-        }
-        .sidebar .closebtn {
-            position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 36px;
-            margin-left: 50px;
-        }
-        #main {
-            transition: margin-left .5s;
-            padding: 16px;
-        }
-    </style>
+    <title>Score</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="font-sans">
 
-<div id="mySidebar" class="sidebar">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-    <a href="#">Home</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+<div class="fixed w-full bg-gray-800 text-white h-12 flex items-center px-4 z-10 ">
+    <h1 class="text-xl ml-8">Score</h1>
 </div>
 
-<div id="main">
-    <button onclick="openNav()">☰ Open Sidebar</button>
+<div id="mySidebar" class="fixed top-12 left-0 h-full w-0 bg-gray-900 text-white overflow-x-hidden transition-all duration-500 z-20">
+    <a href="#" class="block py-2 px-4 text-lg hover:bg-gray-700">Home</a>
+    <a href="#" class="block py-2 px-4 text-lg hover:bg-gray-700">Services</a>
+    <a href="#" class="block py-2 px-4 text-lg hover:bg-gray-700">Clients</a>
+    <a href="#" class="block py-2 px-4 text-lg hover:bg-gray-700">Contact</a>
+</div>
+
+<div id="main" class="transition-all duration-500 pt-12 pl-4">
+    <!-- Main content goes here -->
+    <button class="openbtn text-2xl cursor-pointer fixed top-2 left-4 z-30" onclick="toggleNav()">☰</button>
 </div>
 
 <script>
-    function openNav() {
-        document.getElementById("mySidebar").style.width = "250px";
-        document.getElementById("main").style.marginLeft = "250px";
-    }
-
-    function closeNav() {
-        document.getElementById("mySidebar").style.width = "0";
-        document.getElementById("main").style.marginLeft= "0";
+    function toggleNav() {
+        const sidebar = document.getElementById("mySidebar");
+        const main = document.getElementById("main");
+        if (sidebar.style.width === "250px") {
+            sidebar.style.width = "0";
+            main.style.marginLeft = "0";
+        } else {
+            sidebar.style.width = "250px";
+            main.style.marginLeft = "250px";
+        }
     }
 </script>
 
