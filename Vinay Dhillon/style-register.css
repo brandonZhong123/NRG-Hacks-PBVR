@@ -1,4 +1,4 @@
-/* ========= Register Page Styles ========= */
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: #F4F4F6;
@@ -10,7 +10,7 @@ body {
     padding: 20px;
 }
 
-/* Container */
+
 .container {
     background: #FFFFFF;
     padding: 30px;
@@ -22,14 +22,14 @@ body {
     border: 1px solid #DADADA;
 }
 
-/* Headers */
+
 h2 {
     margin-bottom: 20px;
     color: #333333;
     font-weight: 600;
 }
 
-/* Form Groups */
+
 .form-group {
     margin-bottom: 15px;
     text-align: left;
@@ -38,7 +38,7 @@ h2 {
     flex-direction: column;
 }
 
-/* Labels */
+
 label {
     font-size: 14px;
     font-weight: 500;
@@ -46,7 +46,7 @@ label {
     margin-bottom: 5px;
 }
 
-/* Input Fields */
+
 input {
     width: 100%;
     padding: 10px;
@@ -65,14 +65,14 @@ input:focus {
     outline: none;
 }
 
-/* Error Messages */
+
 .error {
     color: #D63031;
     font-size: 12px;
     margin-top: 5px;
 }
 
-/* First Name & Last Name Row */
+
 .row {
     display: flex;
     gap: 12px;
@@ -83,7 +83,7 @@ input:focus {
     width: 50%;
 }
 
-/* Buttons */
+
 .button-group {
     display: flex;
     flex-direction: column;

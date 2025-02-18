@@ -1,4 +1,4 @@
-/* ========= Grades Page Styles ========= */
+
 body {
     font-family: 'Inter', sans-serif;
     background-color: #F4F4F6;
@@ -10,7 +10,7 @@ body {
     padding: 20px;
 }
 
-/* Container */
+
 .container {
     background: #FFFFFF;
     padding: 30px;
@@ -22,20 +22,20 @@ body {
     border: 1px solid #DADADA;
 }
 
-/* Headers */
+
 h2 {
     margin-bottom: 20px;
     color: #333333;
     font-weight: 600;
 }
 
-/* Grades Table */
+
 .grades-table {
     margin-top: 10px;
     overflow-x: auto;
 }
 
-/* Table Styling */
+
 table {
     width: 100%;
     border-collapse: collapse;
@@ -64,7 +64,7 @@ tr:hover {
     transition: background 0.3s ease;
 }
 
-/* Course Summary */
+
 .course-summary {
     margin-top: 20px;
     padding: 15px;
@@ -75,7 +75,7 @@ tr:hover {
     color: #333333;
 }
 
-/* Highlight Final Grade */
+
 .highlight {
     color: #FF7A00;
     font-weight: bold;
