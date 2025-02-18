@@ -1,0 +1,113 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #d6d6d6; /* 4chan background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container */
+.container {
+    background: #f0e0d6; /* Light cream color like 4chan posts */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    text-align: center;
+    border: 2px solid #a89f91; /* Soft brown border */
+}
+
+/* Header */
+h2 {
+    margin-bottom: 20px;
+    color: #5b4636; /* Darker brown for contrast */
+}
+
+/* Form groups */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #5b4636;
+    margin-bottom: 5px;
+}
+
+/* Input fields */
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #a0a0a0;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #eef2ff;
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* First Name & Last Name row */
+.row {
+    display: flex;
+    gap: 10px; /* Small space between First Name and Last Name */
+    justify-content: space-between;
+}
+
+.half-width {
+    width: 50%;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Register Button */
+button[type="submit"] {
+    background-color: #be7e4e;
+    color: white;
+    border: 1px solid #a56a3d;
+}
+
+button[type="submit"]:hover {
+    background-color: #a56a3d;
+}
+
+/* Already Have an Account Button */
+.secondary-btn {
+    background-color: #8b635c;
+    color: white;
+    border: 1px solid #6e4a44;
+}
+
+.secondary-btn:hover {
+    background-color: #6e4a44;
+}

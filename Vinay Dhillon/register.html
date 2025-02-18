@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h2>Register</h2>
+  <form id="registerForm">
+
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="Enter your email" required>
+      <span class="error" id="emailError"></span>
+    </div>
+
+    <div class="row">
+      <div class="form-group half-width">
+        <label for="first_name">First Name</label>
+        <input type="text" id="first_name" name="first_name" placeholder="First Name" required>
+        <span class="error" id="firstNameError"></span>
+      </div>
+      <div class="form-group half-width">
+        <label for="last_name">Last Name</label>
+        <input type="text" id="last_name" name="last_name" placeholder="Last Name" required>
+        <span class="error" id="lastNameError"></span>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter Password" required>
+      <span class="error" id="passwordError"></span>
+    </div>
+
+    <div class="form-group">
+      <label for="confirm_password">Confirm Password</label>
+      <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm Password" required>
+      <span class="error" id="confirmPasswordError"></span>
+    </div>
+
+    <div class="button-group">
+      <button type="submit">Register</button>
+      <button type="button" class="secondary-btn" onclick="window.location.href='login.html';">Already have an account?</button>
+    </div>
+  </form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
