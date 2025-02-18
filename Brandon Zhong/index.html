@@ -8,7 +8,7 @@
 </head>
 <body class="font-sans">
 
-<div class="fixed w-full bg-gray-800 text-white h-12 flex items-center px-4 z-10 ">
+<div class="fixed w-full bg-gray-800 text-white h-12 flex items-center px-4 z-10">
     <h1 class="text-xl ml-8">Score</h1>
 </div>
 
@@ -19,9 +19,73 @@
     <a href="#" class="block py-2 px-4 text-lg hover:bg-gray-700">Contact</a>
 </div>
 
-<div id="main" class="transition-all duration-500 pt-12 pl-4">
-    <!-- Main content goes here -->
-    <button class="openbtn text-2xl cursor-pointer fixed top-2 left-4 z-30" onclick="toggleNav()">☰</button>
+<div id="main" class="transition-all duration-500 pt-12 pl-4 ml-0">
+    <button class="openbtn text-2xl cursor-pointer fixed top-4 left-4 z-30" onclick="toggleNav()">☰</button>
+    <div class="m-4 mt-16">
+        <h2 class="text-2xl font-bold mb-4">Dashboard</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        
+            <div class="bg-white p-4 rounded shadow">
+                <h3 class="text-xl font-semibold mb-2">Courses with Marks</h3>
+                <table class="min-w-full bg-white">
+                    <thead>
+                        <tr>
+                            <th class="py-2 px-4 bg-gray-200">Course Name</th>
+                            <th class="py-2 px-4 bg-gray-200">Mark</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border px-4 py-2">Math</td>
+                            <td class="border px-4 py-2 text-green-500">95%</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="bg-white p-4 rounded shadow">
+                <h3 class="text-xl font-semibold mb-2">Appointments</h3>
+                <table class="min-w-full bg-white">
+                    <thead>
+                        <tr>
+                            <th class="py-2 px-4 bg-gray-200">Day</th>
+                            <th class="py-2 px-4 bg-gray-200">Time</th>
+                            <th class="py-2 px-4 bg-gray-200">Appointment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border px-4 py-2">Monday</td>
+                            <td class="border px-4 py-2">11:00 AM - 12:00 PM</td>
+                            <td class="border px-4 py-2">Tutor Session</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="bg-white p-4 rounded shadow mt-5">
+            <h3 class="text-xl font-semibold mb-2">Your Schedule</h3>
+            <table class="min-w-full bg-white">
+                <thead>
+                    <tr>
+                        <th class="py-2 px-4 bg-gray-200">Day</th>
+                        <th class="py-2 px-4 bg-gray-200">Time</th>
+                        <th class="py-2 px-4 bg-gray-200">Activity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border px-4 py-2">Monday</td>
+                        <td class="border px-4 py-2">9:00 AM - 10:00 AM</td>
+                        <td class="border px-4 py-2">Math Class</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
 </div>
 
 <script>
