@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Scheduler</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+<div class="container">
+    <h2>Add Assignment</h2>
+    <form id="assignmentForm">
+        <label for="title"></label><input type="text" id="title" placeholder="Assignment Title" required>
+        <label for="dueDate"></label><input type="date" id="dueDate" required>
+        <label for="priority"></label><select id="priority">
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+        </select>
+        <button type="submit">Add Assignment</button>
+    </form>
+    <div class="assignments" id="assignmentList">
+        <h3>Scheduled Assignments</h3>
+        <ul id="list"></ul>
+    </div>
+</div>
+<script src="form.js"></script>
+</body>
+</html>
