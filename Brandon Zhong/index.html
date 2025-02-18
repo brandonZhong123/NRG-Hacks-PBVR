@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Score</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Score</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="font-sans">
@@ -20,13 +19,13 @@
 </div>
 
 <div id="main" class="transition-all duration-500 pt-12 pl-4 ml-0">
-    <button class="openbtn text-2xl cursor-pointer fixed top-4 left-4 z-30" onclick="toggleNav()">☰</button>
+    <button class="openbtn text-2xl cursor-pointer fixed top-2 left-3.5 z-30 text-white" onclick="toggleNav()">☰</button>
     <div class="m-4 mt-16">
         <h2 class="text-2xl font-bold mb-4">Dashboard</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        
+
             <div class="bg-white p-4 rounded shadow">
-                <h3 class="text-xl font-semibold mb-2">Courses with Marks</h3>
+                <h3 class="text-xl font-semibold mb-2">Courses with Marks</h3>``````````````````
                 <table class="min-w-full bg-white">
                     <thead>
                         <tr>
@@ -85,22 +84,8 @@
             </table>
         </div>
     </div>
-    
+
 </div>
-
-<script>
-    function toggleNav() {
-        const sidebar = document.getElementById("mySidebar");
-        const main = document.getElementById("main");
-        if (sidebar.style.width === "250px") {
-            sidebar.style.width = "0";
-            main.style.marginLeft = "0";
-        } else {
-            sidebar.style.width = "250px";
-            main.style.marginLeft = "250px";
-        }
-    }
-</script>
-
+<script src="index.js"></script>
 </body>
 </html>
