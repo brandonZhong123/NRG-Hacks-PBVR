@@ -15,7 +15,7 @@ body {
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    width: 450px;
+    width: 600px;
     text-align: center;
     border: 1px solid #DADADA; /* Soft grey border */
 }
@@ -27,95 +27,51 @@ h2 {
     font-weight: 600;
 }
 
-/* Form groups */
-.form-group {
-    margin-bottom: 15px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
+/* Grades Table */
+.grades-table {
+    margin-top: 10px;
+    overflow-x: auto;
 }
 
-/* Labels */
-label {
-    font-size: 14px;
-    font-weight: 500;
-    color: #555555; /* Medium grey for clarity */
-    margin-bottom: 5px;
-}
-
-/* Input fields */
-input {
+table {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #CCCCCC; /* Light grey border */
-    border-radius: 6px;
-    font-size: 14px;
-    background-color: #FAFAFA; /* Soft grey-white background */
-    color: #333333;
-    box-sizing: border-box;
-    transition: border 0.3s, background 0.3s;
+    border-collapse: collapse;
+    margin-top: 10px;
 }
 
-input:focus {
-    border: 1px solid #FF7A00; /* Orange highlight on focus */
-    background-color: #FFF5EB; /* Subtle warm orange tint */
-    outline: none;
-}
-
-/* Error message styling */
-.error {
-    color: #D63031; /* Professional red for error feedback */
-    font-size: 12px;
-    margin-top: 5px;
-}
-
-/* First Name & Last Name row */
-.row {
-    display: flex;
-    gap: 12px; /* Modern spacing between fields */
-    justify-content: space-between;
-}
-
-.half-width {
-    width: 50%;
-}
-
-/* Buttons */
-.button-group {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-button {
+th, td {
     padding: 12px;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
-    transition: 0.3s;
+    border: 1px solid #D1D1D1; /* Soft grey border */
+    text-align: left;
 }
 
-/* Register Button */
-button[type="submit"] {
-    background-color: #FF7A00; /* Modern vibrant orange */
+th {
+    background-color: #FF7A00; /* Orange header */
     color: white;
-    border: 1px solid #E66A00;
+    font-weight: 600;
 }
 
-button[type="submit"]:hover {
-    background-color: #E66A00; /* Darker energetic orange */
+tr:nth-child(even) {
+    background-color: #FAFAFA; /* Alternating row color */
 }
 
-/* Already Have an Account Button */
-.secondary-btn {
-    background-color: #F4F4F6; /* Soft neutral grey */
-    color: #333333; /* Darker text for contrast */
-    border: 1px solid #D1D1D1;
+tr:hover {
+    background-color: #FFF5EB; /* Light orange hover */
 }
 
-.secondary-btn:hover {
-    background-color: #E6E6E6;
+/* Course Summary */
+.course-summary {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #FFF5EB; /* Light warm background */
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
+}
+
+/* Highlight Final Grade */
+.highlight {
+    color: #FF7A00; /* Orange highlight */
+    font-weight: bold;
 }
